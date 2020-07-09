@@ -1,0 +1,45 @@
+{
+  "name": "rollup-react-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "rollup -c rollup.test.config.js",
+    "test": "npx mocha build/index.test.js",
+    "test:alt": "mocha -r @babel/register -r ts-node/register src/**/*test.tsx"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.9.41",
+    "pretty": "^2.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "chai": "^4.2.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.0.1",
+    "node-sass": "^4.14.1",
+    "rollup": "^2.21.0",
+    "rollup-plugin-multi-entry": "^2.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "sass-loader": "^9.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
