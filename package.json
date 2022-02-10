@@ -28,7 +28,7 @@
     "chai": "^4.2.0",
     "glob": "^7.1.6",
     "mocha": "^8.0.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "rollup": "^2.21.0",
     "rollup-plugin-multi-entry": "^2.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
